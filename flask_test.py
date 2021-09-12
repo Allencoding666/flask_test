@@ -1,6 +1,6 @@
-# 使用heroku要建立runtime.txt，告訴人家我們使用的python是哪一個版本
-# 建立requierments.txt，專案運作時需要使用那些套件，gunicorn我們沒用到，但是要在heroku上啟動專案，必須加入
-# 建立Procfile，告訴heroku我們要如何啟動專案heroku是使用gunicorn啟動我們的web專案，後面加上
+# 使用heroku要建立專案描述檔runtime.txt，告訴人家我們使用的python是哪一個版本
+# 建立專案描述檔requierments.txt，專案運作時需要使用那些套件，gunicorn我們沒用到，但是要在heroku上啟動專案，必須加入
+# 建立專案描述檔Procfile，告訴heroku我們要如何啟動專案heroku是使用gunicorn啟動我們的web專案，後面加上專案名稱:啟動的Flask物件名稱
 from flask import Flask
 
 app = Flask(__name__)  # __name__ 代表目前執行的模組
